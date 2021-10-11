@@ -8,7 +8,7 @@
         <router-link to="/">指南</router-link>
       </div>
       <div class="items2">
-        <router-link to="/">GitHub</router-link>
+        <a href="https://github.com/hec990/Orange-UI" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
