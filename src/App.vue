@@ -1,16 +1,12 @@
 <template>
-  <div>
-    <XiaoHe />
-  </div>
+  <div>导航栏 | <router-link to="/">组件1</router-link> | <router-link to="/xxx">组件2</router-link></div>
+  <hr>
+  <router-view/>
 </template>
 
 <script>
-import XiaoHe from "./components/XiaoHe.vue";
 
 export default {
   name: "App",
-  components: {
-    XiaoHe,
-  },
 };
 </script>

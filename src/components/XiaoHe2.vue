@@ -1,0 +1,3 @@
+<template>
+  第二个组件
+</template>
