@@ -29,7 +29,9 @@ export default {
 .tabnav > .logo {
   margin-left: 10px;
 }
-
+.tabnav > .logo > a {
+  font-weight: bold;
+}
 .tabnav > .meun {
   display: flex;
   align-items: center;
