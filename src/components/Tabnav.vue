@@ -5,7 +5,7 @@
     </div>
     <div class="meun">
       <div class="items1">
-        <router-link to="/">指南</router-link>
+        <router-link to="/doc">指南</router-link>
       </div>
       <div class="items2">
         <a href="https://github.com/hec990/Orange-UI" target="_blank">GitHub</a>
