@@ -1,17 +1,5 @@
 <template>
-  <div class="tabnav">
-    <div class="logo">
-      <router-link to="/">🍊 Orange-UI</router-link>
-    </div>
-    <div class="meun">
-      <div class="items1">
-        <router-link to="/">指南</router-link>
-      </div>
-      <div class="items2">
-        <router-link to="/">GitHub</router-link>
-      </div>
-    </div>
-  </div>
+ <Tabnav/>
   <div class="main">
      <div class="main-top">
        <div class="name">
@@ -21,7 +9,9 @@
          📚 组件库项目的使用和详细介绍
        </div>
        <div class="button">
-         <span>📖 开始阅读</span>
+         <div>
+           <router-link to="/doc">📖 开始阅读</router-link>
+         </div>
        </div>
      </div>
     <div class="main-bottom">
@@ -44,39 +34,18 @@
   </div>
   <div class="footer">
     <span>Copyright © 2021 XiaoHeHe | <a href="https://github.com/hec990/Orange-UI.git" target="_blank">Orange-UI</a></span>
-
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Tabnav from "../components/Tabnav.vue";
 export default {
-  name: "Home"
+  components: {Tabnav}
 }
 </script>
 
 <style scoped>
-/* Tabnav css*/
- .tabnav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px;
- }
- .tabnav > .logo {
-   margin-left: 10px;
- }
-
- .tabnav > .meun {
-   display: flex;
-   align-items: center;
- }
- .tabnav > .meun > div {
-   font-size: 14px;
-   margin-right: 40px;
- }
-
 /* main css*/
-.main{}
 .main > .main-top {
   height: 400px;
   background-color:#f5f6f8;
@@ -91,15 +60,17 @@ export default {
   padding-top: 20px;
 }
 .main > .main-top > .button {
-  margin-top: 40px;
+  margin-top: 35px;
 }
-.main > .main-top > .button > span{
+.main > .main-top > .button > div{
   padding: 13px 32px;
   border-radius: 20px;
   background-color:#4569d4;
-  color: white;
 }
-.main > .main-top > .button > span:hover{
+.main > .main-top > .button > div > a{
+ color: white;
+}
+.main > .main-top > .button > div:hover{
   cursor: pointer;
   opacity: .8;
 }
@@ -125,7 +96,7 @@ export default {
   border-radius: 5px;
 }
 .main > .main-bottom>div:hover {
-  background-color: #ddd;
+  background-color: #e9e9e9;
 }
 .main > .main-bottom>div > img {
   width: 70px;
