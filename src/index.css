@@ -10,6 +10,10 @@ a {
 a:hover {
   color: #4569d4;
 }
+ol {
+ list-style-type:none;
+}
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
