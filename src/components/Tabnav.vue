@@ -37,7 +37,8 @@ export default {
   align-items: center;
 }
 .tabnav > .meun > div {
-  font-size: 14px;
-  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  width: 80px;
 }
 </style>
