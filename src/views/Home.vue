@@ -32,9 +32,6 @@
       </div>
     </div>
   </div>
-  <div class="footer">
-    <span>Copyright © 2021 XiaoHeHe | <a href="https://github.com/hec990/Orange-UI.git" target="_blank">Orange-UI</a></span>
-  </div>
 </template>
 
 <script lang="ts">
@@ -107,11 +104,5 @@ export default {
 }
 .main > .main-bottom>div > p{
   padding: 5px;
-}
-/* footer css*/
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
 }
 </style>
