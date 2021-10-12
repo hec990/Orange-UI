@@ -21,14 +21,12 @@ export default {
 
 <style scoped>
 .tabnav {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   background-color: white;
-}
-.tabnav > .logo {
-  margin-left: 10px;
+  padding: 10px;
 }
 .tabnav > .logo > a {
   font-weight: bold;
