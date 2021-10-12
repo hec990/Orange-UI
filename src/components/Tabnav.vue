@@ -33,11 +33,14 @@ export default {
 }
 .tabnav > .meun {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .tabnav > .meun > div {
   display: flex;
   justify-content: flex-end;
+  text-align: center;
+  line-height: 60px;
   width: 80px;
 }
 </style>
