@@ -13,6 +13,14 @@ a:hover {
 ol {
  list-style-type:none;
 }
+img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+body {
+  background-color: white;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
