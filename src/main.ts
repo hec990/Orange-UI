@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+// 全局样式
+import './assets/css/global.scss'
+// 适配样式
+import './assets/css/media.scss'
 import { createWebHashHistory, createRouter } from 'vue-router'
 const history = createWebHashHistory()
 

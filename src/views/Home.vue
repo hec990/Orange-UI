@@ -74,7 +74,6 @@ export default {
 
 /* main bottom */
 .main > .main-bottom {
-  /*border: 1px solid red;*/
   display: flex;
   justify-content: center;
 }

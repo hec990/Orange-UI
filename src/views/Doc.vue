@@ -27,7 +27,7 @@
 import Tabnav from "../components/Tabnav.vue";
 import Aside from '../components/Aside.vue'
 export default {
-  components: {Tabnav,Aside}
+  components: {Tabnav}
 }
 </script>
 
