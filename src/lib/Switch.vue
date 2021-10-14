@@ -27,7 +27,7 @@ export default {
     height: $h;
     width: $h*2;
     border: none;
-    background-color: gray;
+    background-color: #E3E3E3;
     border-radius: $h/2;
     position: relative;
     span{
@@ -41,7 +41,7 @@ export default {
       transition: left 250ms;
     }
     &.checked {
-      background-color: blue;
+      background-color: #40BABF;
     }
     &.checked > span{
       left: calc(100% - #{$h2} - 2px);

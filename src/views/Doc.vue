@@ -2,8 +2,19 @@
  <Tabnav/>
   <div class="content">
     <aside>
-      <h3>组件列表</h3>
       <ol>
+        <li>
+          <h4>文档</h4>
+        </li>
+        <li>
+          <router-link to="#">介绍</router-link>
+        </li>
+        <li>
+          <router-link to="#">安装</router-link>
+        </li>
+        <li>
+          <h4>组件</h4>
+        </li>
         <li>
           <router-link to="/doc/switch">Switch 开关</router-link>
         </li>
@@ -14,7 +25,7 @@
           <router-link to="/doc/dialog">Dialog 对话框</router-link>
         </li>
         <li>
-          <router-link to="/doc/tabs">Tabs 选项卡</router-link>
+          <router-link to="/doc/tabs">Tabs 标签页</router-link>
         </li>
       </ol>
     </aside>
@@ -37,18 +48,26 @@ export default {
 }
 aside {
   display: inline-block;
-  width: 180px;
   display: flex;
+  width: 260px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: orange;
+  background-color: #FFFFFF;
+  cursor: pointer;
 }
-aside ol {
-  margin-top: 10px;
+aside>ol{
+  width: 100%;
 }
-aside ol li {
-  padding: 8px;
+aside>ol>li {
+  padding: 10px;
+}
+aside>ol>li:hover {
+  background-color: #E5F2FA;
+}
+aside>ol>li>a{
+ margin-left: 30px;
+  font-size: 14px;
 }
 
 </style>
