@@ -26,6 +26,10 @@ export default {
     height: $h2;
     width: $h2;
     background-color: white;
-   border-radius: $h2/2;
+    border-radius: $h2/2;
+    transition: left 250ms;
+  }
+  button:hover > span{
+    left: calc(100% - #{$h2} - 2px);
   }
 </style>
