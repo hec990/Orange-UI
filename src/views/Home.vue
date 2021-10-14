@@ -54,7 +54,7 @@ export default {
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
   .name {
     padding-top: 40px
   }
