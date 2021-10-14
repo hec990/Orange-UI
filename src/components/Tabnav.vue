@@ -27,6 +27,7 @@ export default {
   align-items: center;
   background-color: white;
   padding: 10px;
+  border: 1px solid #E3E3E3;
 }
 .tabnav > .logo > a {
   font-weight: bold;
