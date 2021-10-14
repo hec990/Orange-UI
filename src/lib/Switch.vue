@@ -11,7 +11,9 @@ export default {
   setup(props,context){
     const toggle = ()=>{
       // 发送到外面 ==> SwitchDemo，参数1：哪个属性？ 参数2：要做什么？
-      context.emit('input',!props.value)
+      //参数1要与props的key一样，且前面有一个 update: ,这个是尤雨溪规定的
+      // 发送信号给父亲
+      context.emit('update:value',!props.value)
     }
     return {toggle}
   }

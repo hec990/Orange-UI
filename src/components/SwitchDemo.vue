@@ -1,7 +1,7 @@
 <template>
   <div>
      <!--  $event 接收最新的值  -->
-    <Switch :value="y" @input="y = $event" />
+    <Switch v-model:value="y"/>
   </div>
 </template>
 
