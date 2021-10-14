@@ -30,21 +30,23 @@ export default {
     background-color: gray;
     border-radius: $h/2;
     position: relative;
+    span{
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      height: $h2;
+      width: $h2;
+      background-color: white;
+      border-radius: $h2/2;
+      transition: left 250ms;
+    }
+    &.checked {
+      background-color: blue;
+    }
+    &.checked > span{
+      left: calc(100% - #{$h2} - 2px);
+    }
   }
-  span{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    height: $h2;
-    width: $h2;
-    background-color: white;
-    border-radius: $h2/2;
-    transition: left 250ms;
-  }
-  button.checked {
-    background-color: blue;
-  }
-  button.checked > span{
-    left: calc(100% - #{$h2} - 2px);
-  }
+
+
 </style>

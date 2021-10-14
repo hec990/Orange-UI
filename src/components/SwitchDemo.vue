@@ -1,6 +1,5 @@
 <template>
   <div>
-     <!--  $event 接收最新的值  -->
     <Switch v-model:value="bool"/>
   </div>
 </template>
