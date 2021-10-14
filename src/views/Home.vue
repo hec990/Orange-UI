@@ -10,7 +10,7 @@
        </div>
        <div class="button">
          <div>
-           <router-link to="/doc">📖 开始阅读</router-link>
+           <router-link to="/doc">开始阅读</router-link>
          </div>
        </div>
      </div>
@@ -65,7 +65,7 @@ export default {
     margin-top: 35px;
     div{
       padding: 13px 32px;
-      border-radius: 20px;
+      border-radius: 10px;
       background-color:#4569d4;
       a{
         color: white;
