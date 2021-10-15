@@ -1,13 +1,19 @@
 <template>
-  ButtonDemo
+  <div>ButtonDemo</div>
+  <h1>示例</h1>
+  <div>
+    <Button>你好</Button>
+  </div>
 </template>
 
-<script>
+<script lang="ts">
+import Button from '../lib/Button.vue'
 export default {
-  name: "ButtonDemo"
+  name: "ButtonDemo",
+  components:{Button}
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
