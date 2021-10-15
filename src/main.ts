@@ -1,10 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+// 组件样式
+import './lib/Orange.scss'
 // 全局样式
 import './assets/css/global.scss'
-// 适配样式
-import './assets/css/media.scss'
 import { createWebHashHistory, createRouter } from 'vue-router'
+import { createApp } from 'vue'
+import App from './App.vue'
 const history = createWebHashHistory()
 
 //导入组件
