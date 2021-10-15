@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggle" :class="{checked:value}"><span></span></button>
+  <button class="Orange-switch" @click="toggle" :class="{'Orange-checked':value}"><span></span></button>
 </template>
 
 <script lang="ts">
@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
   $h:22px;
   $h2:$h - 4px;
-  button{
+  .Orange-switch{
     height: $h;
     width: $h*2;
     border: none;
@@ -40,10 +40,10 @@ export default {
       border-radius: $h2/2;
       transition: left 250ms;
     }
-    &.checked {
+    &.Orange-checked {
       background-color: #40BABF;
     }
-    &.checked > span{
+    &.Orange-checked > span{
       left: calc(100% - #{$h2} - 2px);
     }
   }
