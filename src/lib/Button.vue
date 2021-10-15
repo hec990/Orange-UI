@@ -4,12 +4,12 @@
     </button>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "Button"
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>
