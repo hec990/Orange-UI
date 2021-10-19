@@ -1,0 +1,7 @@
+// 属性里class是or-开头的或者是空格or-开头
+// “ or-” 很有可能是class的第二个类名 例如：<div class="home or-switch"></div>
+[class^="or-"],[class*=" or-"]{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
