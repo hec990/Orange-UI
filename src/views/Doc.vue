@@ -50,7 +50,6 @@ aside {
   display: inline-block;
   display: flex;
   width: 260px;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
