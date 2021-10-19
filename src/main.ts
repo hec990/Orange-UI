@@ -1,5 +1,5 @@
 // 组件样式
-import './lib/Orange.scss'
+import './lib/orange.scss'
 // 全局样式
 import './assets/css/global.scss'
 import { createWebHashHistory, createRouter } from 'vue-router'
