@@ -33,6 +33,7 @@ export default {
   },
   setup(props) {
     const {theme, size, level} = props;
+    // 防止与用户命名冲突
     const classes = computed(() => {
       return {
         [`or-theme-${theme}`]: theme,
