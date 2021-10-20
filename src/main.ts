@@ -14,6 +14,9 @@ import SwitchDemo from './components/SwitchDemo.vue'
 import ButtonDemo from './components/ButtonDemo.vue'
 import DialogDemo from './components/DialogDemo.vue'
 import TabsDemo from './components/TabsDemo.vue'
+import Install from './components/document/Install.vue'
+import Introduce from './components/document/Introduce.vue'
+import Start from './components/document/Start.vue'
 
 const router = createRouter({
     history:history,
@@ -21,6 +24,9 @@ const router = createRouter({
         // 当我访问根目录，访问这个组件
         {path:"/",component:Home},
         {path:"/doc",component:Doc,children:[
+                {path:"install",component:Install},
+                {path:"introduce",component:Introduce},
+                {path:"start",component:Start},
                 {path:'switch',component:SwitchDemo},
                 {path:'button',component:ButtonDemo},
                 {path:'dialog',component:DialogDemo},

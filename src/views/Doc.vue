@@ -7,10 +7,13 @@
           <h4>文档</h4>
         </li>
         <li>
-          <router-link to="#">介绍</router-link>
+          <router-link to="/doc/introduce">介绍</router-link>
         </li>
         <li>
-          <router-link to="#">安装</router-link>
+          <router-link to="/doc/install">安装</router-link>
+        </li>
+        <li>
+          <router-link to="/doc/start">开始使用</router-link>
         </li>
         <li>
           <h4>组件</h4>
@@ -67,6 +70,11 @@ aside>ol>li:hover {
 aside>ol>li>a{
  margin-left: 30px;
   font-size: 14px;
+}
+
+/* vue 提供的*/
+.router-link-active {
+  color: red;
 }
 
 </style>
