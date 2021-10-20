@@ -4,15 +4,16 @@
     <img src="src/assets/images/gulu.png">
   </div>
   <div class="gulu-name">
-    <h1>Orange组件库</h1>
-    <p>一款基于Vue3实现的海贼王组件库</p>
+    <h1>Orange UI</h1>
+    <p>一款基于Vue3实现的海贼王系列UI框架</p>
+    <p style="font-size:12px;">我是要成为海贼王的男人！——路飞</p>
   </div>
   <div class="gulu-menus">
     <button>
       <router-link to="/doc">开始阅读</router-link>
     </button>
     <button>
-      <a href="#">进入GitHub</a>
+      <a href="https://github.com/hec990/Orange-UI">进入GitHub</a>
     </button>
   </div>
 </template>
@@ -36,6 +37,7 @@ export default {
    align-items: center;
    p {
      margin-top: 15px;
+     letter-spacing:2px;
    }
  }
  .gulu-menus{
@@ -56,6 +58,18 @@ export default {
    }
    button:nth-child(2){
      background-color: #313E47;
+   }
+ }
+ @media only screen and (max-device-width: 414px){
+   .gulu-menus {
+     width: 260px;
+     margin: 55px auto;
+   }
+ }
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+   .gulu-menus {
+     width: 350px;
+     margin: 60px auto;
    }
  }
 </style>
