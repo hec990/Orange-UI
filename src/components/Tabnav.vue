@@ -26,38 +26,30 @@ export default {
 <style lang="scss" scoped>
 .tabnav {
   background-color: #FD9C05;
-  height: 60px;
 }
 .logo {
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo-img {
     width: 28px;
     height: 28px;
+    margin-left: 10px;
     img {
-      margin-top:16px;
-      margin-left: 10px;
       opacity: 0;
     }
   }
   a {
-    margin-top: 18px;
-    margin-right: 10px;
     font-size: 16px;
-    display: none;
+    margin-right: 10px;
   }
 }
 
-
-
-
-// 手机端时展示手机端的图标 和 返回首页（ipad / PC 不展示 手机端图标和返回首页文字）
+// 手机端时展示手机端的图标 (PC、ipad不展示图标)
 @media only screen and (max-device-width: 414px){
   .logo > .logo-img > img {
     opacity: 1;
-  }
-  .logo > a {
-    display: block;
   }
 }
 </style>
