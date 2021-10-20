@@ -1,42 +1,19 @@
 <template>
- <Tabnav/>
-  <div class="main">
-     <div class="main-top">
-       <div class="name">
-         <h1 style="font-size: 32px">Orange组件库文档</h1>
-       </div>
-       <div class="description">
-         📚 组件库项目的使用和详细介绍
-       </div>
-       <div class="button">
-         <div>
-           <router-link to="/doc">开始阅读</router-link>
-         </div>
-       </div>
-     </div>
-    <div class="main-bottom">
-      <div class="main-bottom-items1">
-         <img src="../assets/images/concise.png">
-         <div class="msg">
-           <h4>简洁至上</h4>
-           <p>专为程序员定制的主页，酷炫方便</p>
-         </div>
-       </div>
-      <div class="main-bottom-items2">
-        <img src="../assets/images/unpack.png">
-        <div class="msg">
-          <h4>开箱即用</h4>
-          <p>开源代码可在本地直接运行，灵活部署</p>
-        </div>
-      </div>
-      <div class="main-bottom-items3">
-        <img src="../assets/images/adapter.png">
-        <div class="msg">
-          <h4>多端适配</h4>
-          <p>PC、移动端均可获得较好体验</p>
-        </div>
-      </div>
-    </div>
+  <Tabnav/>
+  <div class="gulu-img">
+    <img src="src/assets/images/gulu.png">
+  </div>
+  <div class="gulu-name">
+    <h1>Orange组件库</h1>
+    <p>一款基于Vue3实现的海贼王组件库</p>
+  </div>
+  <div class="gulu-menus">
+    <button>
+      <router-link to="/doc">开始阅读</router-link>
+    </button>
+    <button>
+      <a href="#">进入GitHub</a>
+    </button>
   </div>
 </template>
 
@@ -48,57 +25,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* main css*/
-.main > .main-top {
-  background-color:#f5f6f8;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  .name {
-    padding-top: 40px
-  }
-  .description {
-    padding-top: 20px;
-  }
-  .button {
-    margin-top: 35px;
-    div{
-      padding: 13px 32px;
-      border-radius: 10px;
-      background-color:#4569d4;
-      a{
-        color: white;
-      }
-    }
-    div:hover{
-      cursor: pointer;
-      opacity: .8;
-    }
-  }
-}
-/* main bottom */
-.main-bottom {
-  margin-top: 20px;
-    div {
-      padding: 10px;
-      display: flex;
-      margin-top: 10px;
-    }
-    div > img {
-       width: 50px;
-       padding: 5px;
-      margin: auto 0;
-    }
-   div > .msg {
-     font-size: 18px;
-     display: flex;
-     flex-direction: column;
-     margin-left: 10px;
-      p {
-        margin-top: 5px;
-        font-size: 14px;
-      }
+ .gulu-img {
+   width: 300px;
+   height: 300px;
+   margin: 0 auto;
+ }
+ .gulu-name {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   p {
+     margin-top: 15px;
    }
-}
+ }
+ .gulu-menus{
+   width: 350px;
+   display: flex;
+   justify-content: space-between;
+   margin: 40px auto;
+   button {
+     padding: 10px;
+     background-color: #F1B053;
+     font-weight: bold;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 14px;
+     a {
+       color: white;
+     }
+   }
+   button:nth-child(2){
+     background-color: #313E47;
+   }
+ }
 </style>
