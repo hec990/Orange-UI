@@ -2,6 +2,7 @@
   <div class="tabnav">
    <div class="logo">
      <img src="../../src/assets/images/gulu.png">
+     <router-link to="/doc/switch">进入组件</router-link>
    </div>
   </div>
 </template>
@@ -9,14 +10,23 @@
 <style lang="scss" scoped>
 .tabnav {
   background-color: #FD9C05;
-  height: 60px;
+  .logo {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 28px;
+      height: 28px;
+      margin-left: 10px;
+    }
+    a {
+      margin-right: 10px;
+    }
+  }
 }
-img {
-  width: 28px;
-  margin-top: 16px;
-  margin-left: 10px;
-  border: 1px solid red;
-}
+
+
 
 // 手机
 @media only screen and (max-device-width: 414px){
