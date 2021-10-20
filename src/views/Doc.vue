@@ -60,9 +60,10 @@ aside {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  height: 100%;
   background-color: white;
-  @media (max-width:500px){
+  border: 1px solid #ccc;
+  z-index:100;
+  @media (max-width:414px){
     position: absolute;
   }
 }
@@ -75,9 +76,17 @@ aside>ol>li {
 aside>ol>li:hover {
   background-color: #E5F2FA;
 }
-aside>ol>li>a{
- margin-left: 30px;
-  font-size: 14px;
+aside>ol>li>a {
+  margin-left: 20px;
 }
+.router-link-active {
+  color: red;
+}
+
+main {
+  padding: 10px;
+  width: 100%;
+}
+
 
 </style>
