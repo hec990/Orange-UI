@@ -18,9 +18,6 @@ img {
   border: 1px solid red;
 }
 
-
-
-
 // 手机
 @media only screen and (max-device-width: 414px){
   .logo > .logo-img > img {
