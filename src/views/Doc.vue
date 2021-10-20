@@ -61,6 +61,7 @@ aside {
   align-items: center;
   cursor: pointer;
   height: 100%;
+  background-color: white;
   @media (max-width:500px){
     position: absolute;
   }
