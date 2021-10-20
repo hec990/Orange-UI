@@ -1,5 +1,5 @@
 <template>
-  <Tabnav/>
+  <home-Tabnav />
   <div class="gulu-img">
     <img src="src/assets/images/gulu.png">
   </div>
@@ -10,7 +10,7 @@
   </div>
   <div class="gulu-menus">
     <button>
-      <router-link to="/doc">开始阅读</router-link>
+      <router-link to="/doc/introduce">开始阅读</router-link>
     </button>
     <button>
       <a href="https://github.com/hec990/Orange-UI">进入GitHub</a>
@@ -19,9 +19,10 @@
 </template>
 
 <script lang="ts">
-import Tabnav from "../components/Tabnav.vue";
+import Tabnav from "../components/home-Tabnav.vue";
+import HomeTabnav from "../components/home-Tabnav.vue";
 export default {
-  components: {Tabnav}
+  components:{HomeTabnav, Tabnav}
 }
 </script>
 

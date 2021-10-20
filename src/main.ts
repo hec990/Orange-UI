@@ -1,39 +1,10 @@
 // 组件样式
 import './lib/orange.scss'
-// 全局样式
 import './assets/css/global.scss'
-import { createWebHashHistory, createRouter } from 'vue-router'
 import { createApp } from 'vue'
 import App from './App.vue'
-const history = createWebHashHistory()
+import {router} from "./router";
 
-//导入组件
-import Home from './views/Home.vue'
-import Doc from './views/Doc.vue'
-import SwitchDemo from './components/SwitchDemo.vue'
-import ButtonDemo from './components/ButtonDemo.vue'
-import DialogDemo from './components/DialogDemo.vue'
-import TabsDemo from './components/TabsDemo.vue'
-import Install from './components/document/Install.vue'
-import Introduce from './components/document/Introduce.vue'
-import Start from './components/document/Start.vue'
-
-const router = createRouter({
-    history:history,
-    routes:[
-        // 当我访问根目录，访问这个组件
-        {path:"/",component:Home},
-        {path:"/doc",component:Doc,children:[
-                {path:"install",component:Install},
-                {path:"introduce",component:Introduce},
-                {path:"start",component:Start},
-                {path:'switch',component:SwitchDemo},
-                {path:'button',component:ButtonDemo},
-                {path:'dialog',component:DialogDemo},
-                {path:'tabs',component:TabsDemo},
-            ]}
-    ]
-})
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
