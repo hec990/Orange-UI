@@ -39,7 +39,6 @@
 </template>
 <script lang="ts">
 import Tabnav from "../components/Tabnav.vue";
-import Aside from '../components/Aside.vue'
 import {inject, Ref} from "vue";
 export default {
   components: {Tabnav},
