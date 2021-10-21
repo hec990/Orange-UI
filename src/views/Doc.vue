@@ -83,7 +83,9 @@ aside>ol>li:hover {
 main {
   padding: 10px;
   width: 100%;
+  // PC端、ipad
+  @media (min-width:415px){
+    padding: 40px;
+  }
 }
-
-
 </style>
