@@ -64,6 +64,7 @@ aside {
   z-index:10;
   @media (max-width:414px){
     position: absolute;
+    width: 200px;
   }
 }
 aside>ol{
@@ -79,7 +80,7 @@ aside>ol>li>a {
   margin-left: 20px;
 }
 .router-link-active {
-  color: red;
+  color: orange;
 }
 
 main {
