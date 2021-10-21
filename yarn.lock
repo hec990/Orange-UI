@@ -1493,6 +1493,11 @@
     "picocolors" "^0.2.1"
     "source-map-js" "^0.6.2"
 
+"prismjs@^1.25.0":
+  "integrity" "sha1-b4It8b2tllc0sxCzFaIzFc+Zl1Y="
+  "resolved" "https://registry.npmmirror.com/prismjs/download/prismjs-1.25.0.tgz"
+  "version" "1.25.0"
+
 "pump@^3.0.0":
   "integrity" "sha1-tKIRaBW94vTh6mAjVOjHVWUQemQ="
   "resolved" "https://registry.nlark.com/pump/download/pump-3.0.0.tgz"
