@@ -3,9 +3,7 @@
   <div class="layout">
     <aside v-if="asideVisible">
       <ol>
-        <li>
           <h4>文档</h4>
-        </li>
         <li>
           <router-link to="/doc/introduce">介绍</router-link>
         </li>
@@ -15,9 +13,7 @@
         <li>
           <router-link to="/doc/start">开始使用</router-link>
         </li>
-        <li>
           <h4>组件</h4>
-        </li>
         <li>
           <router-link to="/doc/switch">Switch 开关</router-link>
         </li>
@@ -70,14 +66,15 @@ aside {
 aside>ol{
   width: 100%;
 }
-aside>ol>li {
+aside > ol > h4 {
   padding: 10px;
+}
+aside>ol > li{
+  padding: 10px;
+  margin-left: 20px;
 }
 aside>ol>li:hover {
   background-color: #E5F2FA;
-}
-aside>ol>li>a {
-  margin-left: 20px;
 }
 .router-link-active {
   color: orange;
