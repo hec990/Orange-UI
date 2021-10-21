@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import md from '../../markdown/intor.md'
+import md from '../markdown/intor.md'
 export default {
   data(){
     return {md}

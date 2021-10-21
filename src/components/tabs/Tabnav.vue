@@ -2,7 +2,7 @@
   <div class="tabnav">
     <div class="logo">
         <div class="logo-img" @click="toggleMenu">
-          <img src="src/assets/images/list.png">
+          <img src="../../assets/images/list.png">
         </div>
        <router-link to="/">返回首页</router-link>
     </div>
