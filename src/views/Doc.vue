@@ -38,7 +38,7 @@
   </div>
 </template>
 <script lang="ts">
-import Tabnav from "../components/tabs/Tabnav.vue";
+import Tabnav from "../components/Tabnav.vue";
 import {inject, Ref} from "vue";
 export default {
   components: {Tabnav},
