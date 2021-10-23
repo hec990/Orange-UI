@@ -38,7 +38,7 @@ export default {
     height: 28px;
     margin-left: 10px;
     img {
-      opacity: 0;
+      display: none;
     }
   }
   a {
@@ -50,7 +50,7 @@ export default {
 // 手机端时展示手机端的图标 (PC、ipad不展示图标)
 @media only screen and (max-device-width: 414px){
   .logo > .logo-img > img {
-    opacity: 1;
+    display: block;
   }
 }
 </style>
