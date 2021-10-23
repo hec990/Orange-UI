@@ -1,5 +1,5 @@
 <template>
-  <home-Tabnav />
+  <HomeTabnav />
   <div class="gulu-img">
     <img src="src/assets/images/gulu.png">
   </div>
@@ -11,6 +11,10 @@
   <div class="gulu-menus">
     <button>
       <router-link to="/doc/introduce">开始阅读</router-link>
+    </button>
+    <button class="phone">
+      <span>手机预览</span>
+      <img class="qrcode" src="src/assets/images/erweima.png">
     </button>
     <button>
       <a href="https://github.com/hec990/Orange-UI">进入GitHub</a>
@@ -27,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
  .gulu-img {
    width: 300px;
    height: 300px;
@@ -57,10 +62,35 @@ export default {
        color: white;
      }
    }
-   button:nth-child(2){
+   button:nth-child(3){
      background-color: #313E47;
    }
+   .phone{
+     background-color: #313E47;
+     position: relative;
+     span {
+       color: white;
+     }
+     img {
+       width: 200px;
+       height: 200px;
+       position: absolute;
+       bottom: -210px;
+       right: -63px;
+       display: none;
+     }
+     &:hover>img{
+       display: block;
+     }
+   }
  }
+ // 手机端不显示手机预览按钮
+ @media only screen and (max-width:414px) {
+   .phone {
+     display: none;
+   }
+ }
+
  @media only screen and (max-device-width: 414px){
    .gulu-menus {
      width: 260px;
