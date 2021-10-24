@@ -48,6 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 $border-color: #d9d9d9;
+$padding:16px;
 
 .demo {
   border: 1px solid $border-color;
@@ -55,21 +56,21 @@ $border-color: #d9d9d9;
 
   >h2 {
     font-size: 20px;
-    padding: 8px 16px;
+    padding: 8px $padding;
     border-bottom: 1px solid $border-color;
   }
 
   &-component {
-    padding: 16px;
+    padding: $padding;
   }
 
   &-actions {
-    padding: 8px 16px;
+    padding: 8px $padding;
     border-top: 1px dashed $border-color;
   }
 
   &-code {
-    padding: 8px 16px;
+    padding: 8px $padding;
     border-top: 1px dashed $border-color;
 
     >pre {

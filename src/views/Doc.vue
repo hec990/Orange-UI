@@ -49,60 +49,57 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$height:100vh;
+$padding:10px;
+
 .layout {
   display: flex;
   flex-direction: column;
-}
-.content {
-  display: flex;
-  flex-direction: row;
-  mix-height: 100vh;
-}
-
-aside {
-  display: flex;
-  width: 260px;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  background-color: white;
-  border: 1px solid #ccc;
-  z-index: 10;
-  min-height: 100vh;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  @media (max-width: 414px) {
-    position: absolute;
-    width: 200px;
+  .content {
+    display: flex;
+    flex-direction: row;
+    mix-height: $height;
+  }
+  aside {
+    display: flex;
+    width: 260px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    min-height: $height;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    @media (max-width: 414px) {
+      position: absolute;
+      width: 200px;
+    }
+     > ol {
+      width: 100%;
+       > h4 {
+         padding: $padding;
+       }
+       > li {
+         padding: $padding;
+         margin-left: 20px;
+         &:hover {
+           background-color: #E5F2FA;
+         }
+       }
+    }
+  }
+  main {
+    padding: $padding;
+    width: 100%;
+    // PC端、ipad
+    @media (min-width: 415px) {
+      padding: 40px;
+    }
   }
 }
-
-aside > ol {
-  width: 100%;
-}
-
-aside > ol > h4 {
-  padding: 10px;
-}
-
-aside > ol > li {
-  padding: 10px;
-  margin-left: 20px;
-}
-
-aside > ol > li:hover {
-  background-color: #E5F2FA;
-}
-
 .router-link-active {
   color: orange;
 }
 
-main {
-  padding: 10px;
-  width: 100%;
-  // PC端、ipad
-  @media (min-width: 415px) {
-    padding: 40px;
-  }
-}
 </style>

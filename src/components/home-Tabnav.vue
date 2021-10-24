@@ -8,6 +8,7 @@
 </template>
 
 <style lang="scss" scoped>
+$margin:10px;
 .tabnav {
   background-color: #FD9C05;
   .logo {
@@ -18,10 +19,10 @@
     img {
       width: 28px;
       height: 28px;
-      margin-left: 10px;
+      margin-left: $margin;
     }
     a {
-      margin-right: 10px;
+      margin-right: $margin;
     }
   }
 }
