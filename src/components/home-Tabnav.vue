@@ -17,8 +17,8 @@ $margin:10px;
     justify-content: space-between;
     align-items: center;
     img {
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       margin-left: $margin;
     }
     a {
