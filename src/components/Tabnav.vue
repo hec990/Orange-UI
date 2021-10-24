@@ -1,9 +1,16 @@
 <template>
   <div class="tabnav">
     <div class="logo">
-        <div class="logo-img" @click="toggleMenu">
-          <img src="../assets/images/list.png">
-        </div>
+      <div class="logo-img" @click="toggleMenu">
+        <!-- 手机端图标-->
+        <span>
+             <img class="img1" src="../assets/images/list.png">
+        </span>
+        <!-- PC端图标-->
+        <span>
+              <img class="img2" src="../assets/images/pc-logo.png">
+        </span>
+      </div>
        <router-link to="/">返回首页</router-link>
     </div>
   </div>
@@ -34,9 +41,17 @@ export default {
   justify-content: space-between;
   align-items: center;
   .logo-img {
-    width: 28px;
-    height: 28px;
     margin-left: 10px;
+
+    .img1{
+      width: 28px;
+      display: none;
+    }
+    .img2{
+      width: 40px;
+      display: none;
+    }
+
   }
   a {
     font-size: 16px;
@@ -44,10 +59,17 @@ export default {
   }
 }
 
-// 手机端时展示手机端的图标 (PC、ipad不展示图标)
-//@media only screen and (max-device-width: 414px){
-//  .logo > .logo-img > img {
-//    display: block;
-//  }
-//}
+ // 手机端图片
+@media only screen and (max-device-width: 414px){
+  .logo .logo-img .img1 {
+    display: block;
+  }
+}
+
+// PC端图片
+@media only screen and (min-device-width: 1000px){
+  .logo .logo-img .img2 {
+    display: block;
+  }
+}
 </style>
