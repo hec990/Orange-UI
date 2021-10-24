@@ -48,7 +48,7 @@ export default {
       display: none;
     }
     .img2{
-      width: 40px;
+      width:36px;
       display: none;
     }
 
