@@ -1,13 +1,13 @@
 <template>
-  Start
+  <div class="markdown-body" v-html="md">
+  </div>
 </template>
 
-<script lang="ts">
+<script>
+import md from '../markdown/start.md'
 export default {
-  name: "Start"
+  data(){
+    return {md}
+  }
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
