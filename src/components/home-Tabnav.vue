@@ -1,7 +1,7 @@
 <template>
   <div class="tabnav">
    <div class="logo">
-     <img src="../../src/assets/images/gulu.png">
+     <img src="../../src/assets/images/pc-logo.png">
      <router-link to="/doc/switch">进入组件</router-link>
    </div>
   </div>
@@ -17,8 +17,8 @@ $margin:10px;
     justify-content: space-between;
     align-items: center;
     img {
-      width: 28px;
-      height: 28px;
+      width: 40px;
+      height: 40px;
       margin-left: $margin;
     }
     a {
