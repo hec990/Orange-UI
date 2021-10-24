@@ -37,9 +37,6 @@ export default {
     width: 28px;
     height: 28px;
     margin-left: 10px;
-    img {
-      display: none;
-    }
   }
   a {
     font-size: 16px;
@@ -48,9 +45,9 @@ export default {
 }
 
 // 手机端时展示手机端的图标 (PC、ipad不展示图标)
-@media only screen and (max-device-width: 414px){
-  .logo > .logo-img > img {
-    display: block;
-  }
-}
+//@media only screen and (max-device-width: 414px){
+//  .logo > .logo-img > img {
+//    display: block;
+//  }
+//}
 </style>
