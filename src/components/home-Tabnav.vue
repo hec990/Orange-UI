@@ -11,6 +11,7 @@
 $margin:10px;
 .tabnav {
   background-color: #FD9C05;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   .logo {
     height: 60px;
     display: flex;
