@@ -20,30 +20,28 @@ export default {
 </script>
 
 <style lang="scss">
-  $h:22px;
-  $h2:$h - 4px;
   .or-switch{
-    height: $h;
-    width: $h*2;
+    height: 22px;
+    width: 22px*2;
     border: none;
     background-color: #E3E3E3;
-    border-radius: $h/2;
+    border-radius: 22px/2;
     position: relative;
     span{
       position: absolute;
       top: 2px;
       left: 2px;
-      height: $h2;
-      width: $h2;
+      height: 18px;
+      width: 18px;
       background-color: white;
-      border-radius: $h2/2;
+      border-radius: 18px/2;
       transition: left 250ms;
     }
     &.or-checked {
       background-color: #40BABF;
     }
     &.or-checked > span{
-      left: calc(100% - #{$h2} - 2px);
+      left: calc(100% - #{18px} - 2px);
     }
   }
 

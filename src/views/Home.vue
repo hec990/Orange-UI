@@ -1,7 +1,7 @@
-<template>
+<template xmlns="">
   <HomeTabnav />
   <div class="gulu-img">
-    <img src="src/assets/images/gulu.png">
+    <img src="../assets/images/gulu.png">
   </div>
   <div class="gulu-name">
     <h1>Orange UI</h1>
@@ -14,7 +14,7 @@
     </button>
     <button class="phone">
       <span>手机预览</span>
-      <img class="qrcode" src="src/assets/images/erweima.png">
+      <img class="qrcode" src="../assets/images/erweima.png">
     </button>
     <button>
       <a href="https://github.com/hec990/Orange-UI">进入GitHub</a>
@@ -25,13 +25,13 @@
 <script lang="ts">
 import Tabnav from "../components/home-Tabnav.vue";
 import HomeTabnav from "../components/home-Tabnav.vue";
+
 export default {
   components:{HomeTabnav, Tabnav}
 }
 </script>
 
 <style lang="scss" scoped>
-
  .gulu-img {
    width: 300px;
    height: 300px;
