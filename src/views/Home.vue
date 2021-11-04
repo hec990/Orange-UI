@@ -13,7 +13,7 @@
     </button>
     <button class="phone">
       <span>手机预览</span>
-      <img class="qrcode" src="../assets/images/erweima.png">
+      <img class="qrcode" src="https://img14.360buyimg.com/ddimg/jfs/t1/156469/34/23845/8358/61837465E76758554/8cffb8ecfca2ca31.png">
     </button>
     <button>
       <a href="https://github.com/hec990/Orange-UI">进入GitHub</a>
@@ -80,6 +80,7 @@ export default {
      }
      &:hover>img{
        display: block;
+       border: 2px solid black;
      }
    }
  }
