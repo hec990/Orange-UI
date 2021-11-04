@@ -6,7 +6,6 @@
   <div class="gulu-name">
     <h1>Orange UI</h1>
     <p>一款基于Vue3实现的海贼王系列UI框架</p>
-    <p style="font-size:12px;">我是要成为海贼王的男人！——路飞</p>
   </div>
   <div class="gulu-menus">
     <button>
