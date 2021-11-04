@@ -27,6 +27,7 @@ export default {
     background-color: #E3E3E3;
     border-radius: 22px/2;
     position: relative;
+    border-radius: 20px;
     span{
       position: absolute;
       top: 2px;
@@ -36,6 +37,7 @@ export default {
       background-color: white;
       border-radius: 18px/2;
       transition: left 250ms;
+      border-radius: 20px;
     }
     &.or-checked {
       background-color: #40BABF;
