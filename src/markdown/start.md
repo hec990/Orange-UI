@@ -19,7 +19,7 @@ import {Button, Tabs, Switch, Dialog} from "or-ui"
   <div><Button>按钮</Button></div>
 </template>
 <script>
-  import {Button, Tabs, Switch, Dialog} from "king-ui"
+  import {Button, Tabs, Switch, Dialog} from "or-ui"
   export default {
     components: {Button}
   }
