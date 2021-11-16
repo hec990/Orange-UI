@@ -7,4 +7,4 @@ Orange UI 是一款基于 `Vue3` 和 `TypeScript` 的 UI 组件库。
 ## 源码
 如果你对官网和UI组件源码感兴趣，可以访问我的 [GitHub](https://github.com/hec990/Orange-UI.git) 查看源码。
 
-下一节：[安装](#/doc/install)
+下一节：[安装](/#/doc/install)
